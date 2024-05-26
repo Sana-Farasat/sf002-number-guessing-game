@@ -19,10 +19,13 @@ const answers=await inquirer.prompt([
     },
 ]);
 if(randomNumber === answers.userGuessedNumber){
-   console.log(chalk.green.italic('\n Congratulations! You guessed right number '))
+   console.log(chalk.green.italic('\n\t Congratulations! You guessed right number '))
+}
+else if(isNaN(answers.userGuessedNumber)){
+   console.log(chalk.red('\n\t Please guess any number...'))
 }
 else{
-   console.log(chalk.red('\n Oops! You guessed wrong number'))
+   console.log(chalk.red('\n\t Oops! You guessed wrong number'))
    console.log(chalk.yellowBright.bold("\n\t Please Try Another Number! \t\n"))
 };
 //console.log(randomNumber);
