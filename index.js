@@ -1,5 +1,5 @@
 #! /usr/bin/env node
-//Shabang
+//Shebang
 import inquirer from "inquirer";
 import chalk from "chalk";
 let condition = true;
